@@ -1,12 +1,12 @@
 
-# IB API | Services | Training | ChatGPT | Accelerator | Apply
+# IB API | Services | Training | ChatGPT | Power Hour | Confirm
 
 ```
 Repo:  ib-api-services-training-chatgpt-accelerator-apply
-Route: api.innovationbound.com/services/training/chatgpt/accelerator/apply
+Route: api.innovationbound.com/services/training/chatgpt/powerhour/confirm
 ```
 
-Processes application to the AI Accelerator
+Send confirmation emails and calendar appointment for AI Power Hour
 
 ## NPM scripts
 

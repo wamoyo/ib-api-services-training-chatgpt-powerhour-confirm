@@ -1,0 +1,66 @@
+🎉 YOUR AI POWER HOUR IS CONFIRMED!
+
+Hi {{name}},
+
+Your FREE Business Owner AI Power Hour Training & Strategy Workshop is confirmed!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📅 BOOKING DETAILS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+When: {{dateTime}}
+Attendee: {{name}}
+Company: {{website}}
+Tech Level: {{techLevel}}
+
+🔗 Join Google Meet: {{meetingLink}}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 WHAT TO EXPECT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✓ Proven Strategies: Case studies from businesses like yours showing real AI-powered growth
+
+✓ How AI Actually Works: Understand strengths, weaknesses, and risks to use AI tools wisely
+
+✓ Live Demonstrations: See the latest AI capabilities firsthand
+
+✓ Future Predictions: What's coming in 6-12 months so you can plan ahead
+
+✓ Custom Resources: Brand Guidelines, Competitor Tracking, Podcast Shortlist, and more—all with AI built in
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+💬 YOUR SPECIAL REQUESTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+{{specialRequests}}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📝 BEFORE WE MEET
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+If you haven't already, I recommend creating a free ChatGPT account at https://chat.openai.com and playing around with it for a few minutes. This will help you get more value from our session together!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔄 NEED TO RESCHEDULE?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Just reply to this email and let me know. I'm happy to find a time that works better for you.
+
+Looking forward to showing you exactly how to grow your business with AI!
+
+Costa Michailidis
+Founder, Innovation Bound
+costa@innovationbound.com
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+A calendar invite (.ics file) is attached to this email. Add it to your calendar so you don't miss our session!
+
+This is a booking confirmation. You have not been subscribed to marketing emails.
+
+Manage your email preferences: https://www.innovationbound.com/unsubscribe?email={{email}}
+
+Visit Innovation Bound: https://www.innovationbound.com/chatgpt-training/business-owner-ai-power-hour
+
+Postal address: 7903 Seminole BLVD, Seminole FL 33772
