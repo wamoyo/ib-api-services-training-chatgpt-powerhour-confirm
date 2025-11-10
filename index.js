@@ -31,6 +31,13 @@ export async function handler (event) {
     var website = booking.website ?? null
     var techLevel = booking.techLevel ?? null
     var specialRequests = booking.specialRequests ?? null
+    var mobile = booking.mobile ?? null
+
+    // Check for spam (mobile field should be empty)
+    if (mobile && mobile.trim() !== '') {
+      console.log(`Spam detected from ${email || 'unknown'} - mobile field filled.`)
+      return respond(200, {message: 'Thank you for booking!'})
+    }
 
     // Validate incoming data
     console.log(`Validating booking info for ${email || '(no email provided)'}.`)
