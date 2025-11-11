@@ -1,5 +1,5 @@
 {
-  "name": "ib-api-services-training-chatgpt-powerhour-book",
+  "name": "ib-api-services-training-chatgpt-powerhour-confirm",
   "version": "0.1.0",
   "description": "Book AI Power Hour appointments and send confirmation emails with calendar invites",
   "author": "Costa Michailidis <costa@innovationbound.com> (http://www.github.com/wamoyo)",
@@ -22,6 +22,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wamoyo/ib-api-services-training-chatgpt-powerhour-book.git"
+    "url": "git+https://github.com/wamoyo/ib-api-services-training-chatgpt-powerhour-confirm.git"
   }
 }
