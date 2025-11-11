@@ -89,7 +89,7 @@ export async function handler (event) {
     console.log(`Creating calendar event for ${email} at ${selectedTimeSlot}`)
 
     var calendarEvent = {
-      summary: `AI Power Hour with ${name}`,
+      summary: `AI Power Hour for ${name} with Innovation Bound`,
       description: `Business Owner AI Power Hour Training & Strategy Workshop\n\nAttendee: ${name}\nEmail: ${email}\nWebsite: ${website}\nTech Level: ${techLevel || 'Not specified'}\n\nSpecial Requests:\n${specialRequests || 'None'}`,
       start: {
         dateTime: slotStart.toISOString(),
@@ -121,7 +121,7 @@ export async function handler (event) {
       calendarId: 'costa@innovationbound.com',
       resource: calendarEvent,
       conferenceDataVersion: 1,
-      sendUpdates: 'all' // Send Google Calendar invite to attendee
+      sendUpdates: 'none' // Don't send Google's invite, we send our own branded email with .ics
     })
 
     console.log('Calendar event created:', createdEvent.data.id)
@@ -194,8 +194,8 @@ export async function handler (event) {
 
     // Create .ics calendar file attachment
     var icsContent = createICS({
-      summary: `AI Power Hour with Costa Michailidis`,
-      description: `Business Owner AI Power Hour - Free Training & Strategy Workshop\\n\\nJoin via Google Meet: ${meetingLink}`,
+      summary: `AI Power Hour for ${name} with Innovation Bound`,
+      description: `Business Owner AI Power Hour Training & Strategy Workshop\\n\\nAttendee: ${name}\\nEmail: ${email}\\nWebsite: ${website}\\nTech Level: ${techLevel || 'Not specified'}\\n\\nSpecial Requests:\\n${specialRequests || 'None'}\\n\\nJoin via Google Meet: ${meetingLink}`,
       location: meetingLink,
       start: slotStart,
       end: slotEnd,
@@ -213,7 +213,7 @@ export async function handler (event) {
       `To: ${email}`,
       `Bcc: ${replyToAddress}`,
       `Reply-To: ${replyToAddress}`,
-      `Subject: 🎉 AI Power Hour Confirmed - ${dateTimeDisplay}`,
+      `Subject: 🦾 AI Power Hour Confirmed - ${dateTimeDisplay}`,
       `MIME-Version: 1.0`,
       `Content-Type: multipart/mixed; boundary="${boundary}"`,
       ``,
@@ -280,7 +280,7 @@ function createICS (event) {
     `DESCRIPTION:${event.description}`,
     `LOCATION:${event.location}`,
     `ORGANIZER;CN=${event.organizerName}:mailto:${event.organizerEmail}`,
-    `ATTENDEE;CN=${event.attendeeName};RSVP=TRUE:mailto:${event.attendeeEmail}`,
+    `ATTENDEE;CN=${event.attendeeName};PARTSTAT=ACCEPTED;RSVP=FALSE:mailto:${event.attendeeEmail}`,
     'STATUS:CONFIRMED',
     'SEQUENCE:0',
     'BEGIN:VALARM',
@@ -298,10 +298,11 @@ function respond (code, message) {
     body: code === 204 ? '' : JSON.stringify(message),
     headers: {
       'Content-Type': 'application/json',
-      'Access-Control-Allow-Origin' : 'https://www.innovationbound.com',
+      // 'Access-Control-Allow-Origin' : 'https://www.innovationbound.com',
+      'Access-Control-Allow-Origin' : '*',
       'Access-Control-Allow-Methods' : 'POST,OPTIONS',
       'Access-Control-Allow-Headers' : 'Accept, Content-Type, Authorization',
-      'Access-Control-Allow-Credentials' : true
+      // 'Access-Control-Allow-Credentials' : true
     },
     isBase64Encoded: false,
     statusCode: code
