@@ -14,7 +14,8 @@ import { google } from 'googleapis'
 var ses = new SESClient({ region: 'us-east-1' })
 var dynamoDb = new DynamoDBClient({ region: 'us-east-1' })
 var db = DynamoDBDocumentClient.from(dynamoDb)
-var replyToAddress = "Innovation Bound <support@innovationbound.com>"
+var fromAddress = "Innovation Bound <website@innovationbound.com>"
+var replyToAddress = "Costa Michailidis <costa@innovationbound.com>"
 
 export async function handler (event) {
   console.log('EVENT:', JSON.stringify(event))
@@ -90,7 +91,7 @@ export async function handler (event) {
 
     var calendarEvent = {
       summary: `AI Power Hour for ${name} with Innovation Bound`,
-      description: `Business Owner AI Power Hour Training & Strategy Workshop\n\nAttendee: ${name}\nEmail: ${email}\nWebsite: ${website}\nTech Level: ${techLevel || 'Not specified'}\n\nSpecial Requests:\n${specialRequests || 'None'}`,
+      description: `Think On 3 Questions Before Your Workshop:\n\n1. What are the top 1-3 constraints to business growth for your company?\n2. What work takes up the largest amount of your time?\n3. What questions or complaints do you have about ChatGPT and other AI tools?\n\n---\n\nBusiness Owner AI Power Hour Training & Strategy Workshop\n\nAttendee: ${name}\nEmail: ${email}\nWebsite: ${website}\nTech Level: ${techLevel || 'Not specified'}\n\nSpecial Requests:\n${specialRequests || 'None'}`,
       start: {
         dateTime: slotStart.toISOString(),
         timeZone: 'America/New_York'
@@ -100,7 +101,8 @@ export async function handler (event) {
         timeZone: 'America/New_York'
       },
       attendees: [
-        { email: email, displayName: name }
+        { email: email, displayName: name },
+        { email: 'costa@innovationbound.com', displayName: 'Costa Michailidis', responseStatus: 'accepted' }
       ],
       reminders: {
         useDefault: false,
@@ -121,7 +123,7 @@ export async function handler (event) {
       calendarId: 'costa@innovationbound.com',
       resource: calendarEvent,
       conferenceDataVersion: 1,
-      sendUpdates: 'none' // Don't send Google's invite, we send our own branded email with .ics
+      sendUpdates: 'all' // Send Google Calendar invite to attendee
     })
 
     console.log('Calendar event created:', createdEvent.data.id)
@@ -193,53 +195,77 @@ export async function handler (event) {
       .replace(/{{specialRequests}}/g, specialRequests || 'None')
 
     // Create .ics calendar file attachment
-    var icsContent = createICS({
-      summary: `AI Power Hour for ${name} with Innovation Bound`,
-      description: `Business Owner AI Power Hour Training & Strategy Workshop\\n\\nAttendee: ${name}\\nEmail: ${email}\\nWebsite: ${website}\\nTech Level: ${techLevel || 'Not specified'}\\n\\nSpecial Requests:\\n${specialRequests || 'None'}\\n\\nJoin via Google Meet: ${meetingLink}`,
-      location: meetingLink,
-      start: slotStart,
-      end: slotEnd,
-      organizerEmail: 'costa@innovationbound.com',
-      organizerName: 'Costa Michailidis',
-      attendeeEmail: email,
-      attendeeName: name
-    })
+    // COMMENTED OUT: Testing Google Calendar invite approach without .ics attachment
+    // var icsContent = createICS({
+    //   summary: `AI Power Hour for ${name} with Innovation Bound`,
+    //   description: `Think On 3 Questions Before Your Workshop:\\n\\n1. What are the top 1-3 constraints to business growth for your company?\\n2. What work takes up the largest amount of your time?\\n3. What questions or complaints do you have about ChatGPT and other AI tools?\\n\\n---\\n\\nBusiness Owner AI Power Hour Training & Strategy Workshop\\n\\nAttendee: ${name}\\nEmail: ${email}\\nWebsite: ${website}\\nTech Level: ${techLevel || 'Not specified'}\\n\\nSpecial Requests:\\n${specialRequests || 'None'}\\n\\nJoin via Google Meet: ${meetingLink}`,
+    //   location: meetingLink,
+    //   start: slotStart,
+    //   end: slotEnd,
+    //   organizerEmail: 'costa@innovationbound.com',
+    //   organizerName: 'Costa Michailidis',
+    //   attendeeEmail: email,
+    //   attendeeName: name
+    // })
 
-    // Send email using SendRawEmailCommand to attach .ics file
+    // Send email using SendRawEmailCommand (no .ics attachment)
     var boundary = `----=_Part_${Date.now()}_${Math.random().toString(36).substring(7)}`
 
     var rawMessage = [
-      `From: ${replyToAddress}`,
+      `From: ${fromAddress}`,
       `To: ${email}`,
       `Bcc: ${replyToAddress}`,
       `Reply-To: ${replyToAddress}`,
       `Subject: 🦾 AI Power Hour Confirmed - ${dateTimeDisplay}`,
       `MIME-Version: 1.0`,
-      `Content-Type: multipart/mixed; boundary="${boundary}"`,
+      `Content-Type: multipart/alternative; boundary="${boundary}"`,
       ``,
       `--${boundary}`,
-      `Content-Type: multipart/alternative; boundary="${boundary}_alt"`,
-      ``,
-      `--${boundary}_alt`,
       `Content-Type: text/plain; charset=UTF-8`,
       ``,
       txt,
       ``,
-      `--${boundary}_alt`,
+      `--${boundary}`,
       `Content-Type: text/html; charset=UTF-8`,
       ``,
       html,
       ``,
-      `--${boundary}_alt--`,
-      ``,
-      `--${boundary}`,
-      `Content-Type: text/calendar; charset=UTF-8; method=REQUEST`,
-      `Content-Disposition: attachment; filename="ai-power-hour.ics"`,
-      ``,
-      icsContent,
-      ``,
       `--${boundary}--`
     ].join('\r\n')
+
+    // COMMENTED OUT: Old approach with .ics attachment
+    // var rawMessage = [
+    //   `From: ${replyToAddress}`,
+    //   `To: ${email}`,
+    //   `Bcc: ${replyToAddress}`,
+    //   `Reply-To: ${replyToAddress}`,
+    //   `Subject: 🦾 AI Power Hour Confirmed - ${dateTimeDisplay}`,
+    //   `MIME-Version: 1.0`,
+    //   `Content-Type: multipart/mixed; boundary="${boundary}"`,
+    //   ``,
+    //   `--${boundary}`,
+    //   `Content-Type: multipart/alternative; boundary="${boundary}_alt"`,
+    //   ``,
+    //   `--${boundary}_alt`,
+    //   `Content-Type: text/plain; charset=UTF-8`,
+    //   ``,
+    //   txt,
+    //   ``,
+    //   `--${boundary}_alt`,
+    //   `Content-Type: text/html; charset=UTF-8`,
+    //   ``,
+    //   html,
+    //   ``,
+    //   `--${boundary}_alt--`,
+    //   ``,
+    //   `--${boundary}`,
+    //   `Content-Type: text/calendar; charset=UTF-8; method=REQUEST`,
+    //   `Content-Disposition: attachment; filename="ai-power-hour.ics"`,
+    //   ``,
+    //   icsContent,
+    //   ``,
+    //   `--${boundary}--`
+    // ].join('\r\n')
 
     await ses.send(new SendRawEmailCommand({
       RawMessage: {
@@ -254,7 +280,7 @@ export async function handler (event) {
 
   } catch (error) {
     console.error('Booking error:', error)
-    return respond(500, {error: 'Something went wrong. Please try again or contact support@innovationbound.com'})
+    return respond(500, {error: 'Something went wrong. Please try again or contact costa@innovationbound.com'})
   }
 }
 
