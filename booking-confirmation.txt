@@ -1,51 +1,50 @@
-🎉 YOUR AI POWER HOUR IS CONFIRMED!
+🦾 A.I. POWER HOUR CONFIRMED
 
 Hi {{name}},
 
-Your FREE Business Owner AI Power Hour Training & Strategy Workshop is confirmed!
+Your AI Training & Strategy Workshop is confirmed! Details are below, but first:
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📅 BOOKING DETAILS
+HOW TO GET THE MOST OUT OF YOUR TRAINING...
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-When: {{dateTime}}
-Attendee: {{name}}
-Company: {{website}}
-Tech Level: {{techLevel}}
+Before your scheduled AI Power Hour, think about these 3 questions:
+
+1. What are the top 1, 2, or 3 constraints to business growth for your company?
+
+   If we can use AI to break through constraints to growth, that should be priority #1. If not, we should seek to automate/accelerate the work that occupies the most of your time.
+
+2. What work takes up the largest amount of your time?
+
+   If we can save you 5 to 15 hours per week, what would that mean for you and your business? (Our current record is turning 40 hours of work into 2 hours of work.)
+
+3. What questions or complaints do you have about ChatGPT and other AI tools?
+
+   We are here to help you understand and use AI successfully. You should leave the workshop with extreme clarity and confidence, so bring your most important questions, please.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+WORKSHOP LINK & REMINDER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Below is the link to use to join your workshop. It's the same as the one in the calendar invite attached, and we'll send a reminder before your scheduled time with this same link.
 
 🔗 Join Google Meet: {{meetingLink}}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📋 WHAT TO EXPECT
+YOUR AI POWER HOUR INFO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-✓ Proven Strategies: Case studies from businesses like yours showing real AI-powered growth
-
-✓ How AI Actually Works: Understand strengths, weaknesses, and risks to use AI tools wisely
-
-✓ Live Demonstrations: See the latest AI capabilities firsthand
-
-✓ Future Predictions: What's coming in 6-12 months so you can plan ahead
-
-✓ Custom Resources: Brand Guidelines, Competitor Tracking, Podcast Shortlist, and more—all with AI built in
+📅 When: {{dateTime}}
+👤 Attendee: {{name}}
+🏢 Company: {{website}}
+💻 Tech Level: {{techLevel}}
+🗒️ Special Request: {{specialRequests}}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-💬 YOUR SPECIAL REQUESTS
+QUESTIONS? RESCHEDULE? JUST REPLY.
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-{{specialRequests}}
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📝 BEFORE WE MEET
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-If you haven't already, I recommend creating a free ChatGPT account at https://chat.openai.com and playing around with it for a few minutes. This will help you get more value from our session together!
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🔄 NEED TO RESCHEDULE?
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Just reply to this email and let me know. I'm happy to find a time that works better for you.
+If you have questions, need to reschedule, or anything else... Just reply to this email and let me know.
 
 Looking forward to showing you exactly how to grow your business with AI!
 

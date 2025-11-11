@@ -59,14 +59,15 @@ export async function handler (event) {
 
     var slotEnd = new Date(slotStart.getTime() + (60 * 60 * 1000)) // 1 hour later
 
-    // Check if already booked this time slot
+    // Check if this person already booked this time slot
+    var bookingKey = `${selectedTimeSlot}#${email}`
     var existingBooking = await db.send(new GetCommand({
       TableName: "www.innovationbound.com",
-      Key: { pk: `booking#ai-power-hour`, sk: selectedTimeSlot }
+      Key: { pk: `booking#ai-power-hour`, sk: bookingKey }
     }))
 
     if (existingBooking.Item) {
-      return respond(400, {error: 'This time slot is no longer available. Please select another time.'})
+      return respond(400, {error: 'You have already booked this time slot.'})
     }
 
     // Get OAuth credentials from environment variables
@@ -130,14 +131,14 @@ export async function handler (event) {
     // Store booking in DynamoDB
     var bookingItem = {
       pk: `booking#ai-power-hour`,
-      sk: selectedTimeSlot,
+      sk: bookingKey,  // timestamp#email format
       name: name,
       email: email,
       website: website,
       techLevel: techLevel || '',
       specialRequests: specialRequests || '',
-      slotStart: slotStart.toISOString(),
-      slotEnd: slotEnd.toISOString(),
+      bookingTime: slotStart.toISOString(),
+      durationMinutes: 60,
       googleEventId: createdEvent.data.id,
       meetingLink: meetingLink,
       bookedAt: new Date().toISOString()
