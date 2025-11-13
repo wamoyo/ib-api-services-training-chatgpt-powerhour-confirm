@@ -2,37 +2,47 @@
 
 Hi {{name}},
 
-Your AI Training & Strategy Workshop is confirmed! Details are below, but first:
+Costa here... Your free AI Training & Strategy Workshop is on my calendar!
+All the details are below, but first:
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 HOW TO GET THE MOST OUT OF YOUR TRAINING...
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Before your scheduled AI Power Hour, think about these 3 questions:
 
-1. What are the top 1, 2, or 3 constraints to business growth for your company?
+1. What are your top 1, 2, or 3 CONSTRAINTS TO BUSINESS GROWTH for your
+   company?
 
-   If we can use AI to break through constraints to growth, that should be priority #1. If not, we should seek to automate/accelerate the work that occupies the most of your time.
+   If we can use AI directly to double your sales, boost leads, or unlock
+   any bottleneck to growth... That becomes priority #1 for our AI Power
+   Hour.
 
-2. What work takes up the largest amount of your time?
+2. What daily, weekly, or monthly task takes up too much of YOUR TIME?
 
-   If we can save you 5 to 15 hours per week, what would that mean for you and your business? (Our current record is turning 40 hours of work into 2 hours of work.)
+   If we can save you 5 to 15 hours per week, what would that mean for you
+   and your business? Our current record is turning 40 hours of work into 2
+   hours of work.
 
-3. What questions or complaints do you have about ChatGPT and other AI tools?
+3. What QUESTIONS OR COMPLAINTS do you have about ChatGPT or other AI
+   tools?
 
-   We are here to help you understand and use AI successfully. You should leave the workshop with extreme clarity and confidence, so bring your most important questions, please.
+   I want to make the complicated AI stuff super simple to understand for
+   you, so you can use it effectively to grow your business.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 WORKSHOP LINK & REMINDER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Below is the link to use to join your workshop. It's the same as the one in the calendar invite attached, and we'll send a reminder before your scheduled time with this same link.
+Below is the link to use to join your workshop. It's the same as the one in
+the calendar invite attached, and we'll send a reminder before your
+scheduled time with this same link.
 
 🔗 Join Google Meet: {{meetingLink}}
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 YOUR AI POWER HOUR INFO
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 When: {{dateTime}}
 👤 Attendee: {{name}}
@@ -40,11 +50,12 @@ YOUR AI POWER HOUR INFO
 💻 Tech Level: {{techLevel}}
 🗒️ Special Request: {{specialRequests}}
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 QUESTIONS? RESCHEDULE? JUST REPLY.
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-If you have questions, need to reschedule, or anything else... Just reply to this email and let me know.
+If you have questions, need to reschedule, or anything else... Just reply to
+this email and let me know.
 
 Looking forward to showing you exactly how to grow your business with AI!
 
@@ -52,14 +63,18 @@ Costa Michailidis
 Founder, Innovation Bound
 costa@innovationbound.com
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-A calendar invite (.ics file) is attached to this email. Add it to your calendar so you don't miss our session!
+A calendar invite (.ics file) is attached to this email. Add it to your
+calendar so you don't miss our session!
 
-This is a booking confirmation. You have not been subscribed to marketing emails.
+This is a booking confirmation. You have not been subscribed to marketing
+emails.
 
-Manage your email preferences: https://www.innovationbound.com/unsubscribe?email={{email}}
+Manage your email preferences:
+https://www.innovationbound.com/unsubscribe?email={{email}}
 
-Visit Innovation Bound: https://www.innovationbound.com/chatgpt-training/business-owner-ai-power-hour
+Visit Innovation Bound:
+https://www.innovationbound.com/chatgpt-training/business-owner-ai-power-hour
 
 Postal address: 7903 Seminole BLVD, Seminole FL 33772
