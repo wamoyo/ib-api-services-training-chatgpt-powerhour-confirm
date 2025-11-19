@@ -45,7 +45,8 @@ YOUR AI POWER HOUR INFO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 When: {{dateTime}}
-👤 Attendee: {{name}}
+👤 Name: {{name}}
+📧 Email: {{email}}
 🏢 Company: {{website}}
 💻 Tech Level: {{techLevel}}
 🗒️ Special Request: {{specialRequests}}

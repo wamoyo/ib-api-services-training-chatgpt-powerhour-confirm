@@ -324,11 +324,10 @@ function respond (code, message) {
     body: code === 204 ? '' : JSON.stringify(message),
     headers: {
       'Content-Type': 'application/json',
-      // 'Access-Control-Allow-Origin' : 'https://www.innovationbound.com',
-      'Access-Control-Allow-Origin' : '*',
+      'Access-Control-Allow-Origin' : 'https://www.innovationbound.com',
       'Access-Control-Allow-Methods' : 'POST,OPTIONS',
       'Access-Control-Allow-Headers' : 'Accept, Content-Type, Authorization',
-      // 'Access-Control-Allow-Credentials' : true
+      'Access-Control-Allow-Credentials' : true
     },
     isBase64Encoded: false,
     statusCode: code
